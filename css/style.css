@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row-reverse;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1{
+    font-size: 100px;
+}
+
+canvas{
+    margin-top: 60px;
+}
+
+.game-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.start{
+    background-color: lightgray;
+    height: 50px;
+    width: 300px;
+    font-size: 31px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    margin:30px;
+    background-color: lightgray;
+    
+}
+
+.score{
+    text-align: center;
+    width: 160px;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+    border: solid 2px black;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.timer{
+    font-size: 30px;
+    margin:15px;
+    width: 300px;
+    padding: 20px;
+    border:rgba(144, 144, 145, 0.973) 2px solid;
+}
+
+.game-over-modal{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 139,0.3);
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.model-content{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 600px;
+    height: 250px;
+    background-color:lavender;
+    border: darkblue 2px solid;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.model-content button{
+    border:black 2px solid;
+    border-radius: 4px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 200px;
+    height: 80px;
+    background-color: mistyrose;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TETRIS No.2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onkeyup="moveShape(event)">
+    <div class=game-display>
+        <h1>TETRIS</h1>
+        <button class="start" onclick="init()">Start</button>
+        <div class="timer">00:00</div>
+        <div class="score"></div>
+        <div class="buttons">
+            <button onclick="moveLeft()">⮜</button>
+            <button onclick="moveRight()">⮞</button>
+        </div>
+    </div>
+    <div class="board">
+        <canvas class="tetris" width="400" height="800"></canvas>
+    </div>
+<div class="game-over-modal"> 
+    <div class="model-content">
+        <p>You did great! want to try again?</p>
+        <button onclick="restart()">Play Again</button>
+    </div>
+
+</div>
+    <script src="js/board.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/tetromino_bank.js"></script>
+    <script src="js/tetromino.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
